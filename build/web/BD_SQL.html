@@ -1,0 +1,15 @@
+create database productoWeb;
+
+use productoWeb;
+
+Create table Productos(
+        CodigoArticulo varchar(4) not null,
+        seccion  varchar(11) not null,
+        nombreArticulo varchar(20) not null,
+        precio decimal(10,2) not null,
+        fecha date,
+        importado varchar(10) not null,
+        paisOrigen varchar(10) not null,
+        PRIMARY KEY (CodigoArticulo)
+);
+
